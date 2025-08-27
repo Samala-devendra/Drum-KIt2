@@ -1,0 +1,85 @@
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-glowing-drum-set-stunning-3d-illustration-image_3750337.jpg'); /* Replace this URL with any other image */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app {
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg'); /* Replace this URL with any other image */
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  width: 60vh;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.drum-kit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.drum-pad {
+  background-color: #009688;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: white;
+  text-align: center;
+}
+
+.drum-pad.active {
+  background-color: #4caf50;
+}
+
+.drum-pad:hover {
+  background-color: #00796b;
+}
+
+.drum-pad span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.drum-pad p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.sound-indicator {
+  margin-top: 30px;
+}
+
+.kit-selector button {
+  background-color: #009688;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.kit-selector button:hover {
+  background-color: #00796b;
+}
+
